@@ -1,40 +1,23 @@
-import javax.imageio.ImageIO;
+import javax.sound.sampled.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 
-public class DAW extends JPanel implements MouseListener, ActionListener {
-    @Override
-    public void actionPerformed(ActionEvent e) {
-
-    }
-
-    @Override
-    public void mouseClicked(MouseEvent e) {
-
-    }
-
-    @Override
-    public void mousePressed(MouseEvent e) {
-
-    }
-
-    @Override
-    public void mouseReleased(MouseEvent e) {
-
-    }
-
-    @Override
-    public void mouseEntered(MouseEvent e) {
-
-    }
-
-    @Override
-    public void mouseExited(MouseEvent e) {
-
-    }
+public class DAW extends JFrame {
+    private Clip clip;
+    private JLabel currentTrackLabel;
+    private final int STEPS = 16;
+    private final int TRACKS = 4;
+    private JToggleButton[][] grid;
+    private String[] trackNames = {
+            "Kick",
+            "Snare",
+            "HiHat",
+            "Clap"
+    };
+    private ArrayList<File> soundFiles = new ArrayList<>();
+    private volatile boolean playing = false;
+    private int bpm = 120;
 }
