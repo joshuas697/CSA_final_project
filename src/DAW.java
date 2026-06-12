@@ -16,8 +16,8 @@ public class DAW extends JFrame {
             "Snare",
             "HiHat",
             "Clap",
-            "Bass",
-            "Synth"
+            "Synth",
+            "808"
     };
     private ArrayList<File> soundFiles = new ArrayList<>();
     private volatile boolean playing = false;
@@ -40,8 +40,8 @@ public class DAW extends JFrame {
                 "snare.wav",
                 "hihat.wav",
                 "clap.wav",
-                "bass.wav",
-                "synth.wav"
+                "synth.wav",
+                "808.wav"
         };
 
         try {
